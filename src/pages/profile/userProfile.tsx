@@ -153,6 +153,7 @@ const UserProfile: React.FC<UserProfileProps> = ({
     if (user) {
       fetchTotalCartAmount();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   return (

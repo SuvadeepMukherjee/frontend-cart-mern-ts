@@ -365,7 +365,7 @@ export const ShopContextProvider: React.FC<ShopContextProviderProps> = ({
 
   useEffect(() => {
     fetchCartItems();
-  }, [BASE_URL]);
+  }, [BASE_URL,fetchCartItems]);
 
   const contextValue: ShopContextType = {
     user,
