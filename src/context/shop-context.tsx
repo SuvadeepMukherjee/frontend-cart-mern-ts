@@ -264,6 +264,7 @@ export const ShopContextProvider: React.FC<ShopContextProviderProps> = ({
   const userId: string = "65c96f8a1a2b4c001f3d8e9a";
   const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const fetchCartItems = async () => {
     try {
       const response = await axios.get<{ items: { productId: string; quantity: number }[] }>(
